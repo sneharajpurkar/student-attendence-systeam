@@ -1,0 +1,28 @@
+steps
+for adding students
+
+1.create html to get info of student.
+2.take that student from htm and store it into localstorage.
+3.pass student data from html to javascript.
+4.pass student data from javascript to localstorage.
+
+for displaying student 
+
+1.make structure of html for data.
+1.1 make structure for marking attendence. (present, absent)
+2.take student list from localstorage into js.
+3.add student into html by using js.
+
+for marking attendencs
+
+1.present - function - db - present with date
+2.absent - function - db - absent with date
+
+input add student name-
+
+1.sneha - [present] [absent]
+2.vibha - [present] [absent]
+
+              sneha    vibha
+1.23/02/2023  present  absent
+2.24/02/2023  present  absent

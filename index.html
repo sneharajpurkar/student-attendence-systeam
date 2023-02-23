@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SAS</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        #gettinginfo{
+            width: 50%;
+            margin: auto;
+            border: 1px solid red;
+            height: 80px;
+            text-align: center;
+        }
+        #markingAttendance{
+            width: 60%;
+            margin: auto;
+            border: 1px solid blue;
+            text-align: center;
+        }
+        #displayingStudentsList{
+            width: 60%;
+            margin: auto;
+            border: 1px solid blue;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="gettinginfo">
+        <label>Add Students</label><br/>
+        <input id="addingStudent" type="text" placeholder="Add Student Here...."/><br/>
+        <button onclick="addStudent()">ADD STUDENT</button>
+    </div>
+    <h2>Mark Attendance</h2>
+    <div id="markingAttendance">
+
+    </div>
+    <h2>Attendance Sheet</h2>
+    <div id="displayingStudentsList">
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
