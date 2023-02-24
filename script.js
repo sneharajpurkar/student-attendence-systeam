@@ -1,5 +1,5 @@
 function addStudent (){
-    alert("work");
+    // alert("work");
     var studentName = document.getElementById("addingStudent").value;
     console.log(studentName, "studentName")
     
@@ -21,7 +21,7 @@ function markingAttendance(){
     //looping over userlist to create perfect structure
     var students = [];
     for(var i=0; i < StudentsList.length; i++){
-        students += `<div><p>${StudentsList[i]}</p></div>`;
+        students += `<div id="student"><p>${StudentsList[i]}</p></div>`;
     }
     console.log(students, "Students")
 

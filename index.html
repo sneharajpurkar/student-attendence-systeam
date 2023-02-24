@@ -1,49 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAS</title>
     <style>
-        *{
-            text-align: center;
+        * {
+            background-color: lightcyan;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-        #gettinginfo{
+
+        h2 {
+            width: 100%;
+            background-color: lightgreen;
+            border: 1.5px solid green;
+            height: 35px;
+            position: relative;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        #gettinginfo {
+            margin: auto;
+            margin-top: 30px;
+            height: 70px;
+            text-align: center;
+            position: relative;
+        }
+
+        #gettinginfo>label {
+            font-weight: bolder
+        }
+
+        #gettinginfo>input {
+            margin-top: 5px;
+            width: 300px;
+            height: 20px;
+            border-radius: 5px;
+            text-align: left;
+            outline: none;
+            border: 1.5px solid black;
+            font-weight: bold;
+        }
+
+        #gettinginfo>button {
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100px;
+            height: 25px;
+            background-color: lightgrey;
+            border: 1.5px solid black;
+            outline: none;
+            font-weight: bold;
+        }
+
+        h3 {
+            background-color: lightskyblue;
+            border: 1.5px solid blue;
+            height: 25px;
+            text-align: center;
             width: 50%;
             margin: auto;
-            border: 1px solid red;
-            height: 80px;
-            text-align: center;
+            margin-top: 40px;
         }
-        #markingAttendance{
-            width: 60%;
+
+        #markingAttendance {
+            width: 50%;
             margin: auto;
-            border: 1px solid blue;
+            margin-top: 8px;
+            border: 1.5px solid blue;
             text-align: center;
+            font-weight:600;
         }
-        #displayingStudentsList{
-            width: 60%;
+
+        #displayingStudentsList {
+            width: 50%;
             margin: auto;
-            border: 1px solid blue;
+            margin-top: 8px;
+            border: 1.5px solid blue;
             text-align: center;
+            font-weight:600;
         }
     </style>
 </head>
+
 <body>
+    <h2>Student Attendence Sheet</h2>
     <div id="gettinginfo">
-        <label>Add Students</label><br/>
-        <input id="addingStudent" type="text" placeholder="Add Student Here...."/><br/>
-        <button onclick="addStudent()">ADD STUDENT</button>
+        <label>Add Students</label><br />
+        <input id="addingStudent" type="text" placeholder="Add Student Here...." />
+        <button onclick="addStudent()">Add Student</button>
     </div>
-    <h2>Mark Attendance</h2>
+    <h3>Mark Attendance</h3>
     <div id="markingAttendance">
 
     </div>
-    <h2>Attendance Sheet</h2>
+    <h3>Attendance Sheet</h3>
     <div id="displayingStudentsList">
 
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
