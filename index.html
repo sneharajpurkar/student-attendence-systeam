@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/d4fa596027.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +35,7 @@
         #gettinginfo>label {
             font-weight: bolder;
             font-size: larger;
-            
+
         }
 
         #gettinginfo>input {
@@ -46,7 +47,7 @@
             outline: none;
             border: 1.5px solid black;
             font-weight: bold;
-            background-color:whitesmoke;
+            background-color: whitesmoke;
         }
 
         #gettinginfo>button {
@@ -64,11 +65,15 @@
         h3 {
             background-color: lightskyblue;
             border: 1px solid blue;
-            height: 25px;
+            height: 45px;
             text-align: center;
             width: 60%;
             margin: auto;
             margin-top: 30px;
+        }
+
+        #dateHere {
+            background-color: lightskyblue;
         }
 
         #markingAttendance {
@@ -78,36 +83,91 @@
             border: 1px solid blue;
             text-align: center;
         }
-        #student{
-            margin: 10px;
+
+        #student {
+            margin: 5px;
             font-weight: bold;
+            display: flex;
+            justify-content: space-evenly;
         }
 
         #displayingStudentsList {
+            display: flex;
+            justify-content: space-evenly;
             width: 60%;
             margin: auto;
             margin-top: 8px;
-            border: 1px solid blue;
             text-align: center;
+        }
+
+        #studentList {
+            display: flex;
+            border: 1px solid red;
+            width: 100%;
+            height: 20px;
+        }
+
+        #studentList>div:nth-child(1) {
+            width: 35%;
+        }
+
+        #studentList>div:nth-child(2),
+        div:nth-child(3) {
+            width: 40%;
+        }
+
+        #dateList {
+            display: flex;
+            width: 100%;
+        }
+
+        #dateList>div:nth-child(1) {
+            width: 35%;
+            border: 1px solid red;
+        }
+
+        #dateList>div:nth-child(2) {
+            width: 80%;
+            display: flex;
+            border: 1px solid red;
+        }
+
+        #dateList>div:nth-child(2)>div {
+            width: 50%;
         }
     </style>
 </head>
 
 <body>
-    <h2>Student Attendence Sheet</h2>
+    <h2>Student Attendence System</h2>
     <div id="gettinginfo">
         <label>Add Students</label><br />
         <input id="addingStudent" type="text" placeholder="Add Student Here...." />
         <button onclick="addStudent()">Add Student</button>
     </div>
-    <h3>Mark Attendance</h3>
+    <h3>Mark Attendance <p id="dateHere"></p>
+    </h3>
     <div id="markingAttendance">
 
     </div>
     <h3>Attendance Sheet</h3>
+    <div id="studentsAttendance"></div>
     <div id="displayingStudentsList">
 
+        <div id="studentList">
+            <!-- <div></div>
+            <div>Sneha</div>
+            <div>Vibha</div> -->
+        </div>
+        <div id="dateList">
+            <div>Dates</div>
+            <div>
+                <div>P</div>
+                <div>A</div>        
+            </div>
+        </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 
